@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Hima</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Hima</h1>
+        <p>III B.Tech IT | ANITS</p>
+        <span class="tagline">Passionate Developer & Problem Solver</span>
+        <br><br>
+        <a href="#contact" class="btn">Get In Touch</a>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am an <strong>Information Technology (IT)</strong> student at ANITS. I love exploring new technologies and solving algorithmic challenges on platforms like LeetCode and HackerRank.</p>
+        <p>I am currently focusing on mastering <em>Full Stack Web Development</em> and data structures to build impactful software applications.</p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <span class="badge">Python</span>
+            <span class="badge">HTML5</span>
+            <span class="badge">CSS3</span>
+            <span class="badge">Data Structures</span>
+            <span class="badge">LeetCode Problem Solving</span>
+            <span class="badge">Git & GitHub</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="card">
+                <h3>Water Jug Problem Solver</h3>
+                <p>An AI production rules simulation program written in Python to solve the classic water jug puzzle step-by-step.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="card">
+                <h3>LeetCode Analytics</h3>
+                <p>A personal repository documenting solutions for optimized search algorithms and array manipulations.</p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form onsubmit="return false;">
+            <label for="name">Name</label>
+            <input type="text" id="name" required placeholder="Your Name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required placeholder="Your Email">
+
+            <label for="message">Message</label>
+            <textarea id="message" required placeholder="Your Message Here..."></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Hima. All rights reserved.</p>
+        <address>ANITS College, Visakhapatnam, AP.</address>
+    </footer>
+
+</body>
+</html>
