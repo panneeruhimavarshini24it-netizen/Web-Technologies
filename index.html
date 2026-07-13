@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width = device-width, initial-scale=1.0">
+        <title>Student Profile</title>
+        <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel = "stylesheet">
+        <link rel = "stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="#">Student Profile</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-8">
+
+            <div class="card shadow profile-card">
+                <img src="img/hima-img.png" alt="Student Photo" class="profile-img">
+
+                <div class="card-body text-center">
+                    <h3>Hima Varshini</h3>
+                    <p><strong>Roll Number:</strong>A24126511036</p>
+                    <p><strong>Branch:</strong> Information Technology</p>
+                    <p><strong>Email:</strong> hima@example.com</p>
+
+                   <a href="profile.html" class="btn btn-primary">View Profile</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <section id="about" class="container my-5">
+        <div class = "card shadow p-4">
+            <h2 class = "text-center">About</h2>
+            <p class="text-center">
+                Hello! I am <strong>Hima Varshini</strong>, an Information Technology Student
+                at  Anil Neerukonda Institute of Technology and Sciences(ANITS).
+                I am passionate about Cyber Security, python, MERN Stack, and AI.
+            </p>
+        </div>
+    </section>
+    <div class="row mt-5">
+        <div class="col-lg-10 mx-auto">
+
+            <h3 class="text-center mb-4">Academic Details</h3>
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped text-center">
+
+                    <thead class="table-primary">
+                        <tr>
+                            <th>Subject Name</th>
+                            <th>Internal Marks</th>
+                            <th>External Marks</th>
+                            <th>Total Marks</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Web Technologies</td>
+                            <td>28</td>
+                            <td>65</td>
+                            <td>93</td>
+                        </tr>
+
+                        <tr>
+                            <td>DBMS</td>
+                            <td>27</td>
+                            <td>64</td>
+                            <td>91</td>
+                        </tr>
+
+                        <tr>
+                            <td>Operating Systems</td>
+                            <td>29</td>
+                            <td>66</td>
+                            <td>95</td>
+                        </tr>
+
+                        <tr>
+                            <td>Computer Networks</td>
+                            <td>26</td>
+                            <td>63</td>
+                            <td>89</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+<section id="contact" class="container my-5">
+    <div class="card shadow p-4">
+        <h2 class="text-center">Contact</h2>
+        <p><strong>Email:</strong>hima@example.com</p>
+        <p><strong>Phone:</strong>+91 9876543210</p>
+        <p><strong>Location:</strong>Visakhapatnam, Andhrapradesh</p>
+        <div class="text-center mt-3">
+            <a href="mailto:hima@example.com" class="btn btn-success">Send Email</a>
+        </div>
+    </div>
+</section>
+<footer>
+    <h5>Anil Neerukonda Institute of Technology and Sciences</h5>
+    <p>© 2026 All Rights Reserved.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
