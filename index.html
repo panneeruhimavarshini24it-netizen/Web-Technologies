@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="page">
+
+        <!-- LEFT SECTION -->
+        <section class="welcome-section">
+
+            <div class="brand">
+                🎓 <span>Campus<span class="highlight">Connect</span></span>
+            </div>
+
+            <div class="welcome-content">
+
+                <div class="student-icon">🎓</div>
+
+                <h1>
+                    Begin Your
+                    <span>Academic Journey</span>
+                </h1>
+
+                <p>
+                    Join a community of learners, innovators and future leaders.
+                    Create your student profile and unlock your academic journey.
+                </p>
+
+                <div class="features">
+
+                    <div class="feature">
+                        <span>🔐</span>
+                        <div>
+                            <b>Secure Registration</b>
+                            <small>Your data is protected</small>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <span>⚡</span>
+                        <div>
+                            <b>Quick & Easy</b>
+                            <small>Complete registration in minutes</small>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <span>🚀</span>
+                        <div>
+                            <b>Start Learning</b>
+                            <small>Begin your academic adventure</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p class="copyright">
+                © 2026 CampusConnect. Empowering Student Success.
+            </p>
+
+        </section>
+
+
+        <!-- RIGHT SECTION -->
+        <section class="form-section">
+
+            <div class="form-card">
+
+                <div class="form-header">
+
+                    <div>
+                        <p class="step">STEP 01 OF 01</p>
+
+                        <h2>Create Your Profile</h2>
+
+                        <p>
+                            Fill in your details to get started.
+                        </p>
+                    </div>
+
+                    <div class="progress">
+                        100%
+                    </div>
+
+                </div>
+
+
+                <form id="registrationForm">
+
+                    <div class="form-grid">
+
+                        <!-- FULL NAME -->
+                        <div class="input-group full">
+
+                            <label>Full Name</label>
+
+                            <div class="input-box">
+                                <span>👤</span>
+
+                                <input type="text"
+                                    id="fullName"
+                                    placeholder="Enter your full name">
+
+                            </div>
+
+                            <small id="nameError"></small>
+
+                        </div>
+
+
+                        <!-- ROLL NUMBER -->
+                        <div class="input-group">
+
+                            <label>Roll Number</label>
+
+                            <div class="input-box">
+
+                                <span>🆔</span>
+
+                                <input type="text"
+                                    id="rollNumber"
+                                    placeholder="Ex: 24IT101">
+
+                            </div>
+
+                            <small id="rollError"></small>
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+                        <div class="input-group">
+
+                            <label>Email ID</label>
+
+                            <div class="input-box">
+
+                                <span>✉️</span>
+
+                                <input type="email"
+                                    id="email"
+                                    placeholder="student@email.com">
+
+                            </div>
+
+                            <small id="emailError"></small>
+
+                        </div>
+
+
+                        <!-- MOBILE -->
+                        <div class="input-group">
+
+                            <label>Mobile Number</label>
+
+                            <div class="input-box">
+
+                                <span>📱</span>
+
+                                <input type="text"
+                                    id="mobile"
+                                    placeholder="10-digit number">
+
+                            </div>
+
+                            <small id="mobileError"></small>
+
+                        </div>
+
+
+                        <!-- DOB -->
+                        <div class="input-group">
+
+                            <label>Date of Birth</label>
+
+                            <div class="input-box">
+
+                                <span>📅</span>
+
+                                <input type="date"
+                                    id="dob">
+
+                            </div>
+
+                            <small id="dobError"></small>
+
+                        </div>
+
+
+                        <!-- DEPARTMENT -->
+                        <div class="input-group full">
+
+                            <label>Department</label>
+
+                            <div class="input-box">
+
+                                <span>🏫</span>
+
+                                <select id="department">
+
+                                    <option value="">
+                                        Select your department
+                                    </option>
+
+                                    <option>Information Technology</option>
+
+                                    <option>Computer Science Engineering</option>
+
+                                    <option>Electronics and Communication</option>
+
+                                    <option>Electrical and Electronics</option>
+
+                                    <option>Mechanical Engineering</option>
+
+                                </select>
+
+                            </div>
+
+                            <small id="departmentError"></small>
+
+                        </div>
+
+
+                        <!-- GENDER -->
+                        <div class="input-group full">
+
+                            <label>Gender</label>
+
+                            <div class="gender-options">
+
+                                <label class="gender-card">
+
+                                    <input type="radio"
+                                        name="gender"
+                                        value="Male">
+
+                                    <span>👨</span>
+
+                                    Male
+
+                                </label>
+
+
+                                <label class="gender-card">
+
+                                    <input type="radio"
+                                        name="gender"
+                                        value="Female">
+
+                                    <span>👩</span>
+
+                                    Female
+
+                                </label>
+
+
+                                <label class="gender-card">
+
+                                    <input type="radio"
+                                        name="gender"
+                                        value="Other">
+
+                                    <span>🧑</span>
+
+                                    Other
+
+                                </label>
+
+                            </div>
+
+                            <small id="genderError"></small>
+
+                        </div>
+
+
+                        <!-- PASSWORD -->
+                        <div class="input-group">
+
+                            <label>Password</label>
+
+                            <div class="input-box">
+
+                                <span>🔒</span>
+
+                                <input type="password"
+                                    id="password"
+                                    placeholder="Minimum 8 characters">
+
+                                <button type="button"
+                                    class="show-btn"
+                                    onclick="togglePassword('password', this)">
+                                    Show
+                                </button>
+
+                            </div>
+
+                            <div class="strength">
+                                <div id="strengthBar"></div>
+                            </div>
+
+                            <small id="passwordError"></small>
+
+                        </div>
+
+
+                        <!-- CONFIRM PASSWORD -->
+                        <div class="input-group">
+
+                            <label>Confirm Password</label>
+
+                            <div class="input-box">
+
+                                <span>🔐</span>
+
+                                <input type="password"
+                                    id="confirmPassword"
+                                    placeholder="Re-enter password">
+
+                            </div>
+
+                            <small id="confirmPasswordError"></small>
+
+                        </div>
+
+                    </div>
+
+
+                    <button type="submit" class="register-btn">
+
+                        Create Student Profile
+
+                        <span>→</span>
+
+                    </button>
+
+
+                    <p id="successMessage"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
